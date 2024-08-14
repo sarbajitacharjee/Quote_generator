@@ -9,13 +9,26 @@ const QuoteGenerator = () => {
 
   const categories = [
     'happiness',
+    'age',
+    'beauty',
+    'anger',
     'love',
+    'birthday',
     'life',
+    'dad',
+    'mom',
+    'love',
+    'knowledge',
     'inspiration',
     'wisdom',
+    'jealousy',
     'humor',
+    'morning',
     'friendship',
+    'freedom',
+    'movies',
     'success',
+    'failure',
   ];
 
   const fetchQuote = async () => {
@@ -41,9 +54,10 @@ const QuoteGenerator = () => {
     }
   };
 
-  useEffect(() => {
-    fetchQuote();
-  }, [category]);
+  // fetchQuote();
+  // useEffect(() => {
+  // // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, [category]);
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-purple-500 via-pink-500 to-red-500 animate-gradient-x text-center">
