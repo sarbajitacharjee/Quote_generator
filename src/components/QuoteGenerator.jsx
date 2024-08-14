@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const QuoteGenerator = () => {
-  const [quote, setQuote] = useState('');
+  const [quote, setQuote] = useState('Choose Category');
   const [author, setAuthor] = useState('');
   const [category, setCategory] = useState('happiness');
   const [loading, setLoading] = useState(false);
@@ -61,8 +61,8 @@ const QuoteGenerator = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-purple-500 via-pink-500 to-red-500 animate-gradient-x text-center">
-      <div className="bg-white bg-opacity-20 backdrop-blur-lg rounded-lg shadow-lg p-8 max-w-xl w-full transform transition-transform hover:scale-105">
-        <h1 className="text-4xl font-extrabold mb-6 text-white neon-text">
+      <div className="bg-white bg-opacity-20 backdrop-blur-lg rounded-lg shadow-2xl p-8 max-w-xl w-full transform transition-transform hover:scale-105">
+        <h1 className="text-4xl animate-pulse font-extrabold mb-6 text-white neon-text">
           Quote Generator
         </h1>
         <div className="mb-4">
